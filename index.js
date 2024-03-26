@@ -62,7 +62,7 @@ async function createFakeCommits() {
 		console.log(`Making commit on: ${randomDate.format("YYYY-MM-DD")}`);
 		makeCommit(randomDate);
 		// Simulate some delay between commits
-		await new Promise(resolve => setTimeout(resolve, 500)); // 1 second delay
+		await new Promise(resolve => setTimeout(resolve, 50)); // 1 second delay
 	}
 
 	console.log("Finished creating fake commits!");
